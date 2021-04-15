@@ -10,6 +10,9 @@ pipeline {
             }
 
         stage ('Testing Stage') {
+            when { 
+               branch 'develop' 
+              }
 
             steps {
                 echo 'testing application....'
